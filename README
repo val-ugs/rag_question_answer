@@ -1,0 +1,19 @@
+1. Создайте виртуальное окружение:
+    py -m venv venv
+
+2. Активируйте виртуальное окружение:
+    Windows: 
+        venv\Scripts\activate
+    macOS и Linux: 
+        source venv/bin/activate
+
+3. Установите зависимости:
+    Обновите pip:
+        py -m pip install --upgrade pip
+    Сначала установить pytorch с cuda:
+        py -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+    Далее:
+        py -m pip install -r ./requirements.txt
+
+4. Запустите основной файл программы:
+    py -m main
